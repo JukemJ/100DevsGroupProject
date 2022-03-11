@@ -43,7 +43,8 @@ rightAnswer = selectCharacter();
 
 document
   .querySelector(".blackPanther")
-  .addEventListener("click", correctCheck("blackPanther"));
+  .addEventListener("click", toggleClass("hidden"));
+//   .addEventListener("click", correctCheck("blackPanther"));
 document
   .querySelector(".blackWidow")
   .addEventListener("click", correctCheck("blackWidow"));
