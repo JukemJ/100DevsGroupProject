@@ -3,7 +3,8 @@
 } */
 
 body {
-  margin: 10%;
+  margin: 0;
+  /* background: url(https://i1.sndcdn.com/artworks-000033096933-wmuh4g-t500x500.jpg); */
   background-image: linear-gradient(
     45deg,
     hsl(240deg 100% 50%) 0%,
@@ -18,10 +19,22 @@ body {
     hsl(10deg 99% 61%) 86%,
     hsl(0deg 100% 48%) 100%
   );
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.4rem;
 }
 
+header{
+  margin: 20px auto;
+  /* background: white; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
 .hidden {
-  display: hidden;
+  display: none !important;
+  background: black;
 }
 
 .top {
@@ -30,7 +43,9 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1%;
+  font-weight: bold;
 }
 
 .container div {
@@ -42,9 +57,28 @@ body {
   height: 200px;
   border: 1px solid black;
   margin: 5px 0;
+  overflow: hidden;
+  border-radius: 5px;
+  /* background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 50%) 0%,
+    hsl(254deg 100% 63%) 19%,
+    hsl(258deg 100% 72%) 30%,
+    hsl(261deg 99% 81%) 39%,
+    hsl(264deg 92% 90%) 47%,
+    hsl(0deg 0% 98%) 54%,
+    hsl(14deg 100% 89%) 61%,
+    hsl(13deg 100% 79%) 68%,
+    hsl(12deg 100% 70%) 76%,
+    hsl(10deg 99% 61%) 86%,
+    hsl(0deg 100% 48%) 100%
+  ); */
 }
 
-img {
-  width: 125px;
-  height: auto;
+header img{
+  width: 300px;
+}
+
+div img {
+ width: 100px;
 }
