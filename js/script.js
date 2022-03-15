@@ -127,7 +127,6 @@ function wongDisplay(){
 document.querySelector('#wong').addEventListener('click', wongDisplay)
 
 
-
 //check to see if question is correct
 document.querySelector("#check").addEventListener("click", check);
 
@@ -140,10 +139,42 @@ function check() {
     alert('No')
   }
 }
-// //card flip
-//
-// function correctCheck(pick) {
-//   if (pick == rightAnswer) {
-//     alert("CORRECT");
-//   } else alert("WRONG");
-// }
+
+
+document.querySelector('#thanosGlove').addEventListener('click', thanosSnap)
+
+//THANOS SNAP
+function thanosSnap(){
+  for(i = 0; i < 8; i++){
+    pick = Math.floor(Math.random()*(16-i))
+    console.log(pick)
+    characterList.splice(pick, 1)
+    console.log(characterList)
+  }
+  for(i = 0; i < characterList.length; i++){
+    const a = characterList[i] + "Pic"
+    const faded = document.getElementById(a)
+    
+    setTimeout(function(){faded.style.opacity = 0.95}, 250) //this is very hacky but it works so idk
+    setTimeout(function(){faded.style.opacity = 0.9}, 500)
+    setTimeout(function(){faded.style.opacity = 0.85}, 750)
+    setTimeout(function(){faded.style.opacity = 0.8}, 1000)
+    setTimeout(function(){faded.style.opacity = 0.75}, 1250)
+    setTimeout(function(){faded.style.opacity = 0.7}, 1500)
+    setTimeout(function(){faded.style.opacity = 0.65}, 1750)
+    setTimeout(function(){faded.style.opacity = 0.6}, 2000)
+    setTimeout(function(){faded.style.opacity = 0.55}, 2250)
+    setTimeout(function(){faded.style.opacity = 0.5}, 2500)
+    setTimeout(function(){faded.style.opacity = 0.45}, 2750)
+    setTimeout(function(){faded.style.opacity = 0.4}, 3000)
+    setTimeout(function(){faded.style.opacity = 0.35}, 3250)
+    setTimeout(function(){faded.style.opacity = 0.3}, 3500)
+    setTimeout(function(){faded.style.opacity = 0.25}, 3750)
+    setTimeout(function(){faded.style.opacity = 0.2}, 4000)
+    setTimeout(function(){faded.style.opacity = 0.15}, 4250)
+    setTimeout(function(){faded.style.opacity = 0.1}, 4500)
+    setTimeout(function(){faded.style.opacity = 0.05}, 4750)
+    setTimeout(function(){faded.style.opacity = 0.01}, 5000)
+    }
+  }
+

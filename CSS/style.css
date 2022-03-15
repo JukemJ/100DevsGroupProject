@@ -32,6 +32,12 @@ header{
   align-items: center;
   font-weight: bold;
 }
+
+header button{
+  background: inherit;
+  font-weight: bold;
+  
+}
 .hidden {
   display: none !important;
   background: black;
@@ -81,4 +87,10 @@ header img{
 
 div img {
  width: 100px;
+ opacity: 1;
+}
+
+#thanosGlove{
+  width: 30px;
+  height: 70px;
 }
